@@ -23,7 +23,7 @@ export default () => ({
         include: path.join(__dirname, 'src'),
         use: [
           {
-            loader: 'babel',
+            loader: 'babel-loader',
             options: {
               babelrc: false,
               presets: [
@@ -36,7 +36,7 @@ export default () => ({
       },
       {
         test: /\.(css|scss|sass)$/,
-        loader: 'style!css!sass',
+        loader: 'style-loader!css-loader!sass-loader',
       },
     ]
   },
