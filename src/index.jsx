@@ -8,4 +8,4 @@ import App from './components/app/App.jsx';
 // Styles
 import './index.scss';
 
-ReactDOM.render(<App />, document.getElementById('main'));  
+ReactDOM.render(<App />, document.getElementById('main'));

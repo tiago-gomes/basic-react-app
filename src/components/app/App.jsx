@@ -1,13 +1,16 @@
+// Components
+import Home from '../layout/pages/home/Home.jsx';
+
+// Styles
+import '../layout/pages/home/Home.scss';
+
 // Dependencies
 import React from 'react';
 
-// Components
-import Header from '../header/Header.jsx';  
-import Content from '../content/Content.jsx';  
-import Footer from '../footer/Footer.jsx';
-
-// Styles
-import './App.scss';
+// Import routing components
+import {Router} from 'react-router';
+import createBrowserHistory from 'history/createBrowserHistory'
+const newHistory = createBrowserHistory();
 
 export default class App extends React.Component {
     constructor(props) {
@@ -15,10 +18,8 @@ export default class App extends React.Component {
     }
     render() {
         return (
-            <div className="site-wrapper">
-                <Header />
-                <Content />
-                <Footer />
+            <div>
+                <Router path = "index.html" component={Home} history={newHistory} />
             </div>
         );
     }

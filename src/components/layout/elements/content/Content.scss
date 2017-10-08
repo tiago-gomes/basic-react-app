@@ -1,0 +1,19 @@
+.content {
+    background-color: #cecece;
+    flex: 1 0 auto;
+    font-size: 40px;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span {
+        max-width: 50%;
+    }
+
+    img {
+        height: auto;
+    }
+
+}
