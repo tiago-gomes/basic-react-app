@@ -1,2 +1,2 @@
-# first-react-app
+# React App
 Feel free to use it.
